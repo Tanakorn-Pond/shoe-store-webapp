@@ -17,10 +17,10 @@ import { OrdersModule } from './orders/orders.module';
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: process.env.DB_HOST ?? 'localhost',
-      port: parseInt(process.env.DB_PORT ?? '3306', 10),
-      username: process.env.DB_USERNAME ?? '', // Default username for MAMP
-      password: process.env.DB_PASSWORD ?? '', // Default password for MAMP
-      database: process.env.DB_NAME ?? '', // Default database name
+      port: parseInt(process.env.DB_PORT ?? '8889', 10),
+      username: process.env.DB_USERNAME ?? 'root', // Default username for MAMP
+      password: process.env.DB_PASSWORD ?? 'root', // Default password for MAMP
+      database: process.env.DB_NAME ?? 'shoes_store', // Default database name
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: false,
     }),
