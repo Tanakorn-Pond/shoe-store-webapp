@@ -9,7 +9,11 @@
 
 ### ฝั่ง Database / Backend
 
-นำไฟล์ `.sql` ไป import เข้าฐานข้อมูลที่ใช้งานก่อน จากนั้นรันคำสั่งต่อไปนี้
+นำไฟล์ `.sql` ไป import เข้าฐานข้อมูลที่ใช้งานก่อน 
+
+เข้าไปกรอกข้อมูล Database ในไฟล์ `database/.env`, `database/src/app.module.ts`
+
+จากนั้นรันคำสั่งต่อไปนี้
 
 ```bash
 cd "Web project"

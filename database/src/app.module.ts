@@ -18,9 +18,9 @@ import { OrdersModule } from './orders/orders.module';
       type: 'mysql',
       host: process.env.DB_HOST ?? 'localhost',
       port: parseInt(process.env.DB_PORT ?? '8889', 10),
-      username: process.env.DB_USERNAME ?? 'root', // Default username for MAMP
-      password: process.env.DB_PASSWORD ?? 'root', // Default password for MAMP
-      database: process.env.DB_NAME ?? 'shoes_store', // Default database name
+      username: process.env.DB_USERNAME ?? '', // Your database username
+      password: process.env.DB_PASSWORD ?? '', // Your database password
+      database: process.env.DB_NAME ?? '', // Your database name
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: false,
     }),
