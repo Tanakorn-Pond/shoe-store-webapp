@@ -1,4 +1,4 @@
-/* Global font: Inter */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
@@ -16,5 +16,5 @@ body,
 
 body {
   font-family: var(--font-sans);
-  background-color: rgb(249 250 251 / 1); /* tailwind gray-50 */
+  background-color: rgb(249 250 251 / 1); 
 }

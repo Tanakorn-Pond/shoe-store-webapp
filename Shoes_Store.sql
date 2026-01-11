@@ -1,31 +1,31 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: localhost:8889
--- Generation Time: Oct 31, 2025 at 03:39 AM
--- Server version: 8.0.40
--- PHP Version: 8.3.14
+
+
+
+
+
+
+
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+;
+;
+;
+;
 
---
--- Database: `Shoes_Store`
---
 
--- --------------------------------------------------------
 
---
--- Table structure for table `orders`
---
+
+
+
+
+
+
+
 
 CREATE TABLE `orders` (
   `id` int NOT NULL,
@@ -39,9 +39,9 @@ CREATE TABLE `orders` (
   `status` varchar(255) NOT NULL DEFAULT 'pending'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Dumping data for table `orders`
---
+
+
+
 
 INSERT INTO `orders` (`id`, `userId`, `subtotal`, `shipping`, `total`, `createdAt`, `updatedAt`, `items`, `status`) VALUES
 (5, 12, 10600.00, 0.00, 10600.00, '2025-10-30 21:57:37.073699', '2025-10-30 21:57:37.073699', '[{\"qty\": 1, \"name\": \"ADIZERO ADIOS PRO 4\", \"price\": 8000, \"productId\": 9}, {\"qty\": 1, \"name\": \"Chuck Taylor All Star\", \"price\": 2600, \"productId\": 15}]', 'pending'),
@@ -51,11 +51,11 @@ INSERT INTO `orders` (`id`, `userId`, `subtotal`, `shipping`, `total`, `createdA
 (9, 10, 1800.00, 0.00, 1800.00, '2025-10-31 08:22:54.409562', '2025-10-31 08:22:54.409562', '[{\"qty\": 1, \"name\": \"Nike Air Heights\", \"price\": 1800, \"productId\": 8}]', 'pending'),
 (10, 10, 8000.00, 0.00, 8000.00, '2025-10-31 10:28:18.666812', '2025-10-31 10:28:18.666812', '[{\"qty\": 1, \"name\": \"ADIZERO ADIOS PRO 4\", \"price\": 8000, \"productId\": 9}]', 'pending');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `products`
---
+
+
+
+
 
 CREATE TABLE `products` (
   `id` int NOT NULL,
@@ -70,9 +70,9 @@ CREATE TABLE `products` (
   `updatedAt` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Dumping data for table `products`
---
+
+
+
 
 INSERT INTO `products` (`id`, `name`, `description`, `price`, `stock`, `brand`, `sizes`, `images`, `createdAt`, `updatedAt`) VALUES
 (4, 'Nike Dunk Low Retro', 'Nike Dunk Low Retro สร้างสรรค์มาเพื่อคอร์ทพื้นไม้ แต่ก็เป็นที่นิยมในแนวสตรีท วันนี้กลับมาพร้อมส่วนหุ้มชั้นนอกเฉียบคมและสีสันประจำทีมแบบออริจินัล รองเท้าบาสเก็ตบอลรุ่นไอคอนคู่นี้ถ่ายทอดกลิ่นอายยุค 80 ด้วยหนังระดับพรีเมียมที่ส่วนบน ซึ่งนอกจากจะดูดีแล้วเวลาสวมใส่ยังรู้สึกดียิ่งกว่าเดิม นอกจากนี้ เทคโนโลยีรองเท้ายุคโมเดิร์นยังนำความสบายจากยุคเก่ามาสู่ยุคศตวรรษที่ 21 อีกด้วย', 3700.00, 50, 'Nike', '39,40,41', 'https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/0f76f73e-2578-4d62-abab-c5563ea4f78c/NIKE+DUNK+LOW+RETRO.png', '2025-10-30 12:31:09.000000', '2025-10-30 12:31:09.000000'),
@@ -106,11 +106,11 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `stock`, `brand`, 
 (34, 'New Balance Made In UK 991v2', 'Since its debut in 2001, the 991 has epitomized superior quality. The MADE in UK 991v2 builds on this legacy, offering an evolved take on the classic with a sleeker pigskin suede, mesh, and synthetic upper. The most notable update is the addition of full-length FuelCell cushioning, paired with ABZORB SBS pods and ENCAP features for enhanced comfort.\n\n \n\nSize Disclaimer:\n\nThere may be a 1-2cm difference in measurements depending on the development and manufacturing process.\n\nColor Disclaimer:\n\nActual colors may vary. This is due to the fact that every computer monitor has a different capability to display colors, we cannot guarantee that the color you see accurately portrays the true color of the product.', 10800.00, 27, 'New Balance', '[38,39,40,41,42,43,44,45]', '[\"https://www.newbalance.co.th/media/catalog/product/cache/b444f50a64a092a2138a5e1cbd49879a/9/9/9991-NEWU991VN200510H-1.jpg\"]', '2025-10-30 15:53:40.069556', '2025-10-30 15:53:40.069556'),
 (35, 'New Balance 9060', 'The 9060 is a new expression of the refined style and innovation-led design of the classic 99X series. The 9060 reinterprets familiar 99X elements with a warped sensibility inspired by the proudly futuristic, visible tech aesthetic of the Y2K era. Sway bars, taken from the 990, are expanded and utilized throughout the entire upper for a sense of visible motion, while wavy lines and scaled up proportions on a sculpted pod midsole place an exaggerated emphasis on the familiar cushioning platforms of ABZORB and SBS.', 5700.00, 32, 'New Balance', '[38,39,40,41,42,43,44,45]', '[\"https://www.newbalance.co.th/media/catalog/product/cache/b444f50a64a092a2138a5e1cbd49879a/9/9/9991-NEWU9060CCCXM009H-1.jpg\"]', '2025-10-30 15:55:22.543416', '2025-10-30 15:55:22.543416');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `users`
---
+
+
+
+
 
 CREATE TABLE `users` (
   `id` int NOT NULL,
@@ -122,9 +122,9 @@ CREATE TABLE `users` (
   `role` varchar(255) NOT NULL DEFAULT 'customer'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Dumping data for table `users`
---
+
+
+
 
 INSERT INTO `users` (`id`, `email`, `createdAt`, `updatedAt`, `name`, `passwordHash`, `role`) VALUES
 (1, 'pond@example.com', '2025-10-28 15:30:37.000000', '2025-10-30 22:15:33.882525', '', '', 'customer'),
@@ -134,64 +134,64 @@ INSERT INTO `users` (`id`, `email`, `createdAt`, `updatedAt`, `name`, `passwordH
 (11, '123@gmail.com', '2025-10-30 21:15:17.199394', '2025-10-31 09:44:17.827737', 'Pond', '12345678', 'admin'),
 (12, '1234@gmail.com', '2025-10-01 21:17:02.000000', '2025-10-31 09:44:01.864924', 'Po', '12345678', 'admin');
 
---
--- Indexes for dumped tables
---
 
---
--- Indexes for table `orders`
---
+
+
+
+
+
+
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`),
   ADD KEY `FK_151b79a83ba240b0cb31b2302d1` (`userId`);
 
---
--- Indexes for table `products`
---
+
+
+
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id`),
   ADD KEY `IDX_4c9fb58de893725258746385e1` (`name`);
 
---
--- Indexes for table `users`
---
+
+
+
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `IDX_97672ac88f789774dd47f7c8be` (`email`);
 
---
--- AUTO_INCREMENT for dumped tables
---
 
---
--- AUTO_INCREMENT for table `orders`
---
+
+
+
+
+
+
 ALTER TABLE `orders`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
---
--- AUTO_INCREMENT for table `products`
---
+
+
+
 ALTER TABLE `products`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
---
--- AUTO_INCREMENT for table `users`
---
+
+
+
 ALTER TABLE `users`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
---
--- Constraints for dumped tables
---
 
---
--- Constraints for table `orders`
---
+
+
+
+
+
+
 ALTER TABLE `orders`
   ADD CONSTRAINT `FK_151b79a83ba240b0cb31b2302d1` FOREIGN KEY (`userId`) REFERENCES `users` (`id`);
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+;
+;
+;
